@@ -10,54 +10,42 @@
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             rel="stylesheet">
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body {
-                background-color: darkgray;
+                margin: 0;
                 font-family: 'Oswald', sans-serif;
-                padding: 0px;
+                background-color: lightgray;
             }
 
             .cabecalho {
-                background-color: orange;
-
+                background-color: #333;
+                border-bottom: solid 5px #4faddb;
+                height: 80px;
+                box-sizing: content-box;
             }
 
-            .menu {
-                color: white;
-                text-align: center;
-                
+            .logo {
+                display: inline-block;
+                height: 80px;
+                padding: 15px;
             }
 
-            .autenticacao {
-                color: white;
-                text-decoration: none;
-                text-align: end;
+            .logo img {
+                height: 100%;
             }
 
-            .botao {
-                color: white;
-                text-decoration: none;
-                background-color: red;
-                padding: 10px;
-                border-radius: 10px;
-            }
-
-            ul {
-                list-style-type: none;
-
-            }
-
-            li {
-                display: inline;
-                text-decoration: none;
-                text-align: center;
-            }
-
-            .logo img{
-                width: 300px;
-                display: block;
-                position: relative;
-                top: 50px;
-                padding: 5px;
+            .menu-toggle {
+                float: right;
+                color: #eee;
+                background-color: #555;
+                border: solid 1px #777;
+                border-radius: 5px;
+                height: 40px;
+                padding: 10px 20px;
+                margin: 20px 15px;
             }
         </style>
     </head>
@@ -70,8 +58,8 @@
                         alt="Logo" />
                 </a>
             </div>
-            <!-- <button class="menu-toggle">
-                <i class="fa fa-lg fa-bars"></i> -->
+            <button class="menu-toggle">
+                <i class="fa fa-lg fa-bars"></i>
             </button>
             <nav class="menu">
                 <ul>
